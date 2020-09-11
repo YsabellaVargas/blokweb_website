@@ -1,5 +1,176 @@
 /* CSS Document */
+/* Generic styling */
 *, *::after, *::before {
-  box-sizing:border-box;  
+  box-sizing:border-box;
+}
+html {
+  font: 100% / 250% "Nunito sans";
+}
+body {
+  font-size:1.25em;
+  display:flex;
+  flex-direction: column;
+}
+h1 {
+ font-family: 'Neuton', serif;
+ font-size: 45px;
+ font-weight: 200;
 }
 
+h2 {
+  font-family: 'Neuton', serif;
+  font-size: 36px;
+}
+
+h3{
+  font-family: 'Nunito sans', sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: 'Nunito sans', sans-serif;
+  font-size: 14px;
+}
+
+nav {
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+li {
+  font-family: 'Nunito sans', sans-serif;
+  font-size: 12px;
+  list-style-type: none;
+  text-transform: uppercase;
+}
+
+a {
+  font-family: 'Nunito sans', sans-serif;
+  font-size: 12px;
+}
+
+a:link {
+  font-family: 'Nunito sans', sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+a:visited {
+
+}
+a:hover, a:focus {
+
+}
+a:active {
+
+}
+
+button {
+  border-radius: 22px;
+  text-align: center;
+  font-family: 'Nunito sans', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  background: #000000;
+  color: #ffffff;
+}
+
+img {
+  display: flex;
+}
+
+/* form styling */
+form {
+
+}
+  fieldset {
+
+  }
+    legend {
+
+    }
+    label {
+
+    }
+    input {
+
+    }
+    input:invalid {
+
+    }
+
+/* Section styling */
+
+
+header {
+
+}
+  header h1 {
+
+  }
+
+main {
+
+
+}
+  main button {
+
+  }
+
+
+article {
+
+
+}
+  article header {
+
+  }
+    article header h2 {
+
+    }
+  article section {
+
+  }
+    article section h3 {
+
+    }
+    article section p {
+
+    }
+  article footer {
+
+  }
+section {
+  display: flex;
+}
+aside {
+
+}
+
+footer {
+
+}
+
+/* Component styling */
+section#some-ultra-cool-component {
+
+}
+
+
+/* Breakpoints */
+@media all and (min-width: 30em) {
+
+}
+
+@media all and (min-width: 60em) {
+
+}
+
+@media all and (min-width: 90em) {
+
+}
