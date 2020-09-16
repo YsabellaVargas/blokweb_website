@@ -56,6 +56,7 @@ Ik ben woensdag 16 september met een groepje studenten uit de klas aan dit vak g
 - Twijfels of ik wel voor een responsive design moet gaan
 - Ik begrijp het section:nth-of-type beter na hulp
 - Werken met medestudenten werkt goed en motiverend
+- Ik heb gemerkt dat de site het beste toont via "element inspecteren" en het dan op mobiel formaat zetten
 
 
 ## Intake (week 1)
