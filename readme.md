@@ -1,14 +1,9 @@
 # Procesverslag
-**Auteur:** -Ysabella Vargas Reyes-
-
-Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). Nb. de standaardstructuur en de spartaanse opmaak zijn helemaal prima. Het gaat om de inhoud van je procesverslag. Besteedt de tijd voor pracht en praal aan je website.
-
-
+**Auteur:** Ysabella Vargas Reyes
 
 ## Bronnenlijst
-1. -https://nu-in.com-
-2. -bron 2-
-3. -...-
+1. https://nu-in.com
+2. https://csspeeper.com (om de style mee in te zien)
 
 
 
@@ -38,20 +33,29 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ### Stand van zaken
 
--dit ging goed & dit was lastig-
+Ik vond het lastig om de oefeningen bij te houden naast de opdracht. Het lukte me wel om de stijl op te zetten van de website maar ik vond het lastiger om te werken met flexbox, sections en articles. Ik heb hier lang aan gezeten om het een beetje te begrijpen.
 
 **Screenshot(s):**
 
--screenshot(s) van hoe ver je bent-
+Ik ben al ver met de productpagina van "jackets & coats". Er zijn nog kleine dingen waarvan ik even niet weet hoe ik doe moet oplossen. Dit zijn de navigatie en het save icoon waarmee je een product kan opslaan.
+
+![screenshot product pagina](images/week1.voortgang1.png)
+
+![screenshot product pagina, middenstuk](images/week1.voortgang2.png)
+
+![screenshot product pagina, footer](images/week1.voortgang3.png)
+
 
 ### Agenda voor meeting
 
--samen met je groepje opstellen-
+Ik ben woensdag 16 september met een groepje studenten uit de klas aan dit vak gaan werken. Ieder deed zijn eigen ding maar bij vragen konden we bij elkaar terecht.
 
 ### Verslag van meeting
 
--na afloop snel uitkomsten vastleggen-
-
+- Ik heb een goede opzet van mijn eerste pagina
+- Twijfels of ik wel voor een responsive design moet gaan
+- Ik begrijp het section:nth-of-type beter na hulp
+- Werken met medestudenten werkt goed en motiverend
 
 
 ## Intake (week 1)
