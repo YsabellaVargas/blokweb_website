@@ -1,28 +1,36 @@
 /* CSS Document */
 /* Generic styling */
 *, *::after, *::before {
-  box-sizing:border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
 }
+
 html {
   font: 100% / 250% "Nunito sans";
 }
+
 body {
-  font-size:1.25em;
-  display:flex;
+  font-size: 1.25em;
+  display: flex;
   flex-direction: column;
 }
+
 h1 {
- font-family: 'Neuton', serif;
- font-size: 45px;
- font-weight: 200;
+  font-family: 'Neuton', serif;
+  font-size: 45px;
+  font-weight: 200;
 }
 
 h2 {
-  font-family: 'Neuton', serif;
-  font-size: 36px;
+  font-family: 'Nunito sans', serif;
+  font-size: 13px;
+  text-transform: uppercase;
+  line-height: 17px;
 }
 
-h3{
+h3 {
   font-family: 'Nunito sans', sans-serif;
   font-size: 12px;
   font-weight: bold;
@@ -34,13 +42,23 @@ p {
   font-size: 14px;
 }
 
-nav {
+header {
+  order: 2;
+  background-color: green;
 }
 
-ul {
-  display: flex;
-  justify-content: space-between;
+header img {
+  width: 50%;
+  padding: 1em;
 }
+
+header nav ul {
+  flex-wrap: wrap;
+  list-style-type: none;
+  justify-content: space-around;
+  display: flex;
+}
+
 
 li {
   font-family: 'Nunito sans', sans-serif;
@@ -60,15 +78,11 @@ a:link {
   font-weight: bold;
 }
 
-a:visited {
+a:visited {}
 
-}
-a:hover, a:focus {
+a:hover, a:focus {}
 
-}
-a:active {
-
-}
+a:active {}
 
 button {
   border-radius: 22px;
@@ -81,96 +95,45 @@ button {
 }
 
 img {
-  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: space-around;
 }
-
-/* form styling */
-form {
-
-}
-  fieldset {
-
-  }
-    legend {
-
-    }
-    label {
-
-    }
-    input {
-
-    }
-    input:invalid {
-
-    }
-
-/* Section styling */
-
-
-header {
-
-}
-  header h1 {
-
-  }
 
 main {
 
-
 }
-  main button {
 
-  }
-
-
-article {
-
-
-}
-  article header {
-
-  }
-    article header h2 {
-
-    }
-  article section {
-
-  }
-    article section h3 {
-
-    }
-    article section p {
-
-    }
-  article footer {
-
-  }
 section {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  overflow: hidden;
+  align-items: baseline;
+  align-content: center;
+  width: 100vw;
 }
-aside {
 
+article {
+  width: 45%;
 }
 
-footer {
 
+
+section>section img {
+  width: 100%;
 }
 
-/* Component styling */
-section#some-ultra-cool-component {
+section>article {}
 
-}
+aside {}
+
+footer {}
 
 
 /* Breakpoints */
-@media all and (min-width: 30em) {
+@media all and (min-width: 30em) {}
 
-}
+@media all and (min-width: 60em) {}
 
-@media all and (min-width: 60em) {
-
-}
-
-@media all and (min-width: 90em) {
-
-}
+@media all and (min-width: 90em) {}
