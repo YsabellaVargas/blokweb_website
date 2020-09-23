@@ -76,11 +76,38 @@ h4 {
   font-weight: 400;
 }
 
+h5 {
+  font-family: 'Nunito sans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
 p {
   font-family: 'Nunito sans', sans-serif;
   font-size: 13px;
   text-align: left;
   font-weight: 300;
+}
+
+article > div {
+  display: flex;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  overflow: hidden;
+  align-content: center;
+  width: 100%;
+}
+
+article {
+  width: 48%;
+}
+
+section>section img {
+  width: 100%;
 }
 
 section:first-of-type article p {
@@ -183,23 +210,6 @@ footer section h2 {
   border-bottom: 1px solid #ffffff;
   width: 80%;
   padding: 1em 0em 1em 0em;
-}
-
-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  overflow: hidden;
-  align-content: center;
-  width: 100%;
-}
-
-article {
-  width: 48%;
-}
-
-section>section img {
-  width: 100%;
 }
 
 /* Breakpoints */
