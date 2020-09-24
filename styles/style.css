@@ -56,13 +56,20 @@ img {
   justify-content: space-around;
 }
 
-img:hover .overlay {
+img.overlay {
   position: absolute;
   width: 100%;
+  top: 0;
+  left: 0;
   height: auto;
   justify-content: space-around;
-  display: none;
+  display: block;
   transition: .5s ease;
+  opacity: 0;
+}
+
+img.overlay:hover {
+  opacity:1;
 }
 
 h1 {
@@ -160,6 +167,7 @@ section {
 
 article {
   width: 48%;
+  position: relative;
 }
 
 /*section:first-of-type li img{
