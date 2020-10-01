@@ -5,8 +5,6 @@
 1. https://nu-in.com
 2. https://csspeeper.com (om de style mee in te zien)
 
-
-
 ## Eindgesprek (week 7/8)
 
 -dit ging goed & dit was lastig-
@@ -25,8 +23,37 @@
 
 ## Voortgang 2 (week 5)
 
--same as voortgang 1-
+### Stand van zaken
 
+Ik vind het nog steeds lastig de gegeven oefeningen bij te houden naast de eindopdracht. Er gaat toch veel tijd in zitten. Ik begrijp de sections en articles steeds meer. Ik blijf nog twijfelen over het wel of niet responsive maken maar weet met wat inspanning dat het moet lukken.
+
+**Screenshot(s):**
+
+De productpagina is bijna af. Ik heb het (deels) responsive gemaakt en me code ook "opgeschoond". Ook heb ik een begin gemaakt aan mijn home pagina en een hamburgermenu toegevoegd.
+
+Mijn productpagina responsive:
+![screenshot product pagina, responsive](images/week2.voortgang1.png)
+
+Het hamburgermenu:
+![screenshot product pagina, hamburgermenu](images/week2.voortgang2.png)
+
+Een begin van de homepagina:
+![screenshot homepagina](images/week2.voortgang3.png)
+
+Een carroussel op de homepagina:
+![screenshot homepagina, most wanted](images/week2.voortgang4.png)
+
+
+### Agenda voor meeting
+
+Ik ben woensdag 30 september en donderdag 1 oktober met een groepje studenten uit de klas bij elkaar gekomen om samen te werken en te bespreken wat nog moeilijk was. Ook deze week werkte ieder aan zijn eigen opdracht en konden we voor vragen bij elkaar komen.
+
+### Verslag van meeting
+
+- Mijn eerste pagina is bijna helemaal responsive
+- Kies er toch voor het een en ander responsive te maken
+- Ik heb gezien waar het beste een section of article kan gebruiken
+- Met twee pagina's vind ik het moeilijk weinig classes te gebruiken
 
 
 ## Voortgang 1 (week 3)
