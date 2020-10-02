@@ -19,8 +19,6 @@
 
 -same as voortgang 1-
 
-
-
 ## Voortgang 2 (week 5)
 
 ### Stand van zaken

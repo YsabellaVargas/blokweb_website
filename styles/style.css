@@ -138,15 +138,13 @@ nav ul:first-of-type {
   transition: all 0.3s ease-out;
 }
 
-button {
-  border: none;
-  background-color: white;
+/*section 1*/
+body>section:nth-of-type(1) h2 {
+  margin: 0 auto 0 20px;
 }
 
-/*section 1*/
-body>section h2 {
-  text-align: left;
-  padding-left: 1em;
+body>section:nth-of-type(1) p {
+  margin: 0 auto 0 20px;
 }
 
 /*foto's in cirkels*/
@@ -158,6 +156,28 @@ body>section ul {
   overflow: hidden;
   width: 100%;
 }
+
+body>section ul:nth-of-type(1) {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 20px;
+  padding: 20px;
+}
+
+body>section:nth-of-type(1) ul li {
+  display: block;
+  width: 100%;
+}
+
+body>section:nth-of-type(1) ul li p {
+  text-align: center;
+}
+
+body>section:nth-of-type(1) ul li img {
+  border-radius: 50%;
+}
+
 
 body>section ul li {
   display: block;
@@ -172,7 +192,7 @@ body>section ul li img {
 img {
   display: block;
   width: 100%;
-  height: auto;
+  flex-grow: 0;
   justify-content: space-around;
 }
 
@@ -197,6 +217,15 @@ img.overlay:hover {
 main.homepage>section:first-of-type {
   display: block;
 }
+
+main.homepage > section > article > div > button {
+  background-color: black;
+  border-radius: 3em;
+  padding: 1em;
+  color: white;
+  text-decoration: none;
+}
+
 
 main.homepage>section:first-of-type>article {
   width: 100%;
