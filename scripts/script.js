@@ -14,16 +14,41 @@ function toonHamburger() {
 hamburger.addEventListener('click', toonHamburger);
 hamburgerClose.addEventListener('click', toonHamburger)
 
-var quickViewButton = document.querySelector('#quickViewButton');
-var productArticle = document.querySelector('#productArticle');
+//wilde dit uitproberen
+var quickViewButton = document.querySelectorAll('#quickViewButton');
+var productArticle = document.querySelectorAll('#productArticle');
 
-function showQuickViewButton() {
-    quickViewButton.classList.add('show');
+productArticle.forEach(element => {
+    element.addEventListener('mouseover', (event) =>
+        event.target.classList.add('show')
+    )
+
+    element.addEventListener('mouseout', (event) =>
+        event.target.classList.remove('show'))
+})
+
+// hulp van Sam
+
+var slider = document.querySelectorAll(".article-slider article");
+console.log(slider)
+
+var counter = 1;
+
+function moveArticle() {
+
+    console.log(counter)
+    slider.forEach(element => {
+        element.style.transform = "translateX(-" + counter * 2 + "00%)";
+    });
+    counter++
+
+    if (counter == slider.length / 2) {
+        counter = 0;
+    }
+
+    console.log("fire")
 }
 
-function hideQuickViewButton() {
-    quickViewButton.classList.remove('show');
-}
+window.setInterval(moveArticle, 8000);
 
-productArticle.addEventListener('mouseover', showQuickViewButton);
-productArticle.addEventListener('mouseout', hideQuickViewButton);
+moveArticle()

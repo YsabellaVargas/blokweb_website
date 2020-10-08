@@ -17,7 +17,29 @@
 
 ## Voortgang 3 (week 6)
 
--same as voortgang 1-
+### Stand van zaken
+
+Ik ben er tijdens de afgelopen week achter gekomen dat ik meer moeite heb met de code dan ik had gedacht. Ik probeer te doen wat ik kan en snap en krijg gelukkig ook hulp van medestudenten en Sam. Ik ben toch gegaan voor het responsive maken van mijn website. Vind het een uitdaging voor mezelf die ik zeker wil proberen.
+
+**Screenshot(s):**
+
+Zowel de productpagina als de homepagina is bijna af. Ik heb ervoor gezorgd dat het responsive is. Ik heb ook comments bij mijn code gezet en javascript toegepast omdat ik dit een uitdaging vind die ik graag wil doen. Met javascript heb ik wel hulp gekregen.
+
+Mijn productpagina responsive met een hover met een button:
+![screenshot product pagina, responsive](images/week6.voortgang1.png)
+
+De footer is ook responsive:
+![screenshot home pagina, footer](images/week6.voortgang2.png)
+
+### Agenda voor meeting
+
+Ik ben woensdag 7 oktober samengewerkt met een groepje studenten uit de klas. Ik heb zelf een lijstje gemaakt met dingen die nog moeten gebeuren om mijn website foutloos te laten werken.
+
+### Verslag van meeting
+
+- Gebruik gemaakt van classes
+- Javascript toegevoegd
+- Ervoor gekozen de website responsive te maken
 
 ## Voortgang 2 (week 5)
 

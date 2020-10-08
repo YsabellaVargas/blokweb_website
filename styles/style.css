@@ -62,6 +62,7 @@ body>header {
   z-index: 1000;
   top: 0;
   background-color: #fff;
+
 }
 
 /*logo*/
@@ -70,10 +71,15 @@ body>header {
 /*iconen*/
 nav ul li:first-of-type img {
   margin: .3em;
-  /*width: 100%;*/
+  width: 70%;
 }
 
-header>nav ul li img {
+header > p {
+  text-align: center;
+  background-color: #f5f5f5;
+}
+
+header>nav ul:last-of-type li img {
   width: 1.5em;
   justify-content: space-around;
 }
@@ -90,11 +96,40 @@ header>nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 1em;
 }
 
 header>nav ul li {
   margin-right: 1em;
+
 }
+
+header>nav ul li:first-of-type {
+  display: flex;
+
+}
+
+header>nav ul li a {
+position: relative;
+}
+
+header>nav ul li a:after {
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 0%;
+  position: absolute;
+  background: #000000;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+header>nav ul li a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
 
 /*navigatie + hamburgermenu*/
 nav {
@@ -110,13 +145,14 @@ nav a {
 }
 
 nav > ul:nth-of-type(2) > li:first-of-type button {
-  width: 2em;
+  width: 3em;
+  background-color: transparent;
 }
 
 /*logo*/
 nav > ul:nth-of-type(2) > li:nth-of-type(2) img {
   width: 9em;
-  margin: 1em;
+  margin: 0em 1em 0em 1em;
 }
 
 nav a:active {
@@ -126,6 +162,16 @@ nav a:active {
 .toonHamburger nav ul:first-of-type {
   left: 0;
   opacity: 1;
+}
+
+nav ul:first-of-type li button {
+  background-color: black;
+  border-radius: 3em;
+  margin: 1em;
+  padding: 1em;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 nav ul:first-of-type {
@@ -146,13 +192,11 @@ nav ul:first-of-type {
   transition: all 0.3s ease-out;
 }
 
+
 /*section 1*/
 body>section:nth-of-type(1) h2 {
-  margin: 0 auto 0 20px;
-}
-
-body>section:nth-of-type(1) p {
-  margin: 0 auto 0 20px;
+  margin: 0;
+  width: 100%;
 }
 
 /*foto's in cirkels*/
@@ -178,8 +222,16 @@ body>section:nth-of-type(1) ul li {
   width: 100%;
 }
 
+body>section:nth-of-type(1) ul li a {
+  text-decoration: none;
+}
+
 body>section:nth-of-type(1) ul li p {
   text-align: center;
+  color: #000000;
+  font-family: 'Nunito sans', sans-serif;
+  font-size: 1em;
+  font-weight: 400;
 }
 
 body>section:nth-of-type(1) ul li img {
@@ -188,7 +240,7 @@ body>section:nth-of-type(1) ul li img {
 
 body>section ul li {
   display: block;
-  width: 25%;
+  width: 100%;
 }
 
 body>section ul li img {
@@ -225,12 +277,32 @@ main.homepage>section:first-of-type {
   display: block;
 }
 
+main.homepage>section:first-of-type article h2 {
+  color: white;
+  text-transform: uppercase;
+
+}
+
+main.homepage>section:first-of-type article p {
+  color: white;
+  text-transform: none;
+  text-align: center;
+  line-height: 2em;
+}
+
 main.homepage > section > article > div > button {
-  background-color: black;
+  background-color: #000000;
   border-radius: 3em;
   padding: 1em;
-  color: white;
+  margin: 1em auto 1em auto;
+  display: block;
+}
+
+main.homepage > section > article > div > button a {
   text-decoration: none;
+  color: white;
+  font-family: 'Nunito sans', sans-serif;
+
 }
 
 main.homepage>section:first-of-type>article {
@@ -285,6 +357,7 @@ section>article>header {
 }
 
 /*most wanted slider*/
+
 /*hart icoon slider*/
 main.homepage > section:nth-of-type(3) > article > header > img:nth-of-type(3){
   width: 1em;
@@ -327,7 +400,7 @@ main > section > article > header > button {
   transition: .4s ease;
 }
 
-.show {
+.show+button {
   opacity: 1 !important;
 }
 
@@ -345,8 +418,9 @@ section:first-of-type article p {
 
 section:first-of-type h4 p {}
 
+/*most wanted titel*/
 section:nth-of-type(2) {
-  padding: 4em;
+  padding-top: 2em;
 }
 
 section:nth-of-type(2) h2, section:nth-of-type(2) p {
@@ -354,36 +428,42 @@ section:nth-of-type(2) h2, section:nth-of-type(2) p {
   text-align: center;
 }
 
-main>section:nth-of-type(3) {
-  background-color: #f5f5f5;
+.home main >  section:nth-of-type(3) {
   display: flex;
   flex-wrap: nowrap;
-  padding: 2em 2em 0em 0em;
+  padding: 0em;
   overflow-x: scroll;
 }
 
-main>section:nth-of-type(3) article img {
+.home main> section:nth-of-type(3) article img {
   width: 50vw;
 }
 
-/*transparency text*/
-section:nth-of-type(3) article {
+/*most wanted slider*/
+.home section:nth-of-type(3) article {
   width: 50%;
-  line-height: 1.3;
   margin-bottom: 10px;
+  margin: 1em;
+
 }
 
 /*slider informatie*/
-section:nth-of-type(4) {
+.article-slider {
   width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-wrap: nowrap;
   padding: 0em;
-  justify-content: space-around;
-  overflow-x: scroll;
+  overflow-x: hidden;
 }
 
-section:nth-of-type(4) img {
+.article-slider article {
+  min-width: 50%;
+  padding: 0 1em;
+  /*transform: translateX(-100%);*/
+  transition: 1s ease-in;
+}
+
+.article-slider img {
   width: 1.5em;
   margin: 1.5em 1.5em 1.5em 1.5em;
 }
@@ -516,6 +596,12 @@ footer section h2 {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 1em;
   }
+}
+
+/* logo hamburgermnu*/
+header>nav ul:nth-of-type(2) li:first-of-type a img {
+  margin-right: 20em;
+  width: 100%;
 }
 
 @media all and (min-width: 900px) {
