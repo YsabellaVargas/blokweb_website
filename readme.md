@@ -36,7 +36,7 @@ Hamburgermenu
 ![screenshot hamburgermenu](images/readme/week7-8.hamburgermenu.png)
 
 Homepagina mobiel, de "new arrivals" foto's kunnen horizontaal gescrolld worden op mobiel en zijn klikbaar.
-![screenshot new arrivals scroll](images/readme/week7-8.informatie.mobiel.png)
+![screenshot new arrivals scroll](images/readme/week7-8.mobiel.home.png)
 
 Product overzicht mobiel.
 ![screenshot product pagina mobiel](images/readme/week7-8.producten.mobiel.png)
@@ -54,7 +54,7 @@ Op de homepagina is een nieuwsbrief form.
 ![screenshot nieuwsbrief form](images/readme/week7-8.newsletter.png)
 
 Automatische slider met informatie over hoe de producten worden gemaakt. Werkt op mobiel en desktop.
-![screenshot informatie mobiel](images/readme/week7-8.mobiel.home.png)
+![screenshot informatie mobiel](images/readme/week7-8.informatie.mobiel.png)
 ![screenshot informatie desktop](images/readme/week7-8.informatie.png)
 
 Responsive footer met iconen.
