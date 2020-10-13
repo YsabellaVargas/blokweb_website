@@ -29,39 +29,39 @@ Uiteindelijk heb ik alle errors uit mijn site gehaald, comments toegevoegd en ge
 
 **Screenshot(s):**
 Navigatie met een underline transition.
-![screenshot navigatie](images/readme/week7/8.navigatie.png)
+![screenshot navigatie](../readme/week7-8.navigatie.png)
 
 Hamburgermenu
-![screenshot hamburgermenu](images/readme/week7/8.hamburgermenu.png)
+![screenshot hamburgermenu](../readme/week7-8.hamburgermenu.png)
 
 Homepagina mobiel, de "new arrivals" foto's kunnen horizontaal gescrolld worden op mobiel en zijn klikbaar.
-![screenshot new arrivals scroll](images/readme/week7/8.informatie.mobiel.png)
+![screenshot new arrivals scroll](images/readme/week7-8.informatie.mobiel.png)
 
 Product overzicht mobiel.
-![screenshot product pagina mobiel](images/readme/week7/8.producten.mobiel.png)
+![screenshot product pagina mobiel](images/readme/week7-8.producten.mobiel.png)
 
 Product overzicht desktop.
-![screenshot product pagina desktop](images/readme/week7/8.producten.web.png)
+![screenshot product pagina desktop](images/readme/week7-8.producten.web.png)
 
 Met een hover op een product veranderd de afbeelding en zie je een "quick view" button.
-![screenshot quick view button](images/readme/week7/8.product.hover.png)
+![screenshot quick view button](images/readme/week7-8.product.hover.png)
 
 De "most wanted" producten kunnen horizontaal gescrolld worden op mobiel en desktop.
-![screenshot most wanted producten scroll](images/readme/week7/8.mostwanted.scroll.png)
+![screenshot most wanted producten scroll](images/readme/week7-8.mostwanted.scroll.png)
 
 Op de homepagina is een nieuwsbrief form.
-![screenshot nieuwsbrief form](images/readme/week7/8.newsletter.png)
+![screenshot nieuwsbrief form](images/readme/week7-8.newsletter.png)
 
 Automatische slider met informatie over hoe de producten worden gemaakt. Werkt op mobiel en desktop.
-![screenshot informatie mobiel](images/readme/week7/8.mobiel.home.png)
-![screenshot informatie desktop](images/readme/week7/8.informatie.png)
+![screenshot informatie mobiel](images/readme/week7-8.mobiel.home.png)
+![screenshot informatie desktop](images/readme/week7-8.informatie.png)
 
 Responsive footer met iconen.
-![screenshot footer iconen](images/readme/week7/8.footer.redirect.png)
+![screenshot footer iconen](images/readme/week7-8.footer.redirect.png)
 
 Uitklapbare footer voor mobiel en desktop.
-![screenshot footer web](images/readme/week7/8.footer.web.png)
-![screenshot footer mobile](images/readme/week7/8.footer.png)
+![screenshot footer web](images/readme/week7-8.footer.web.png)
+![screenshot footer mobile](images/readme/week7-8.footer.png)
 
 ## Voortgang 3 (week 6)
 
