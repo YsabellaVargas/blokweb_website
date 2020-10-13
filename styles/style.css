@@ -127,11 +127,11 @@ header>nav ul li a:hover:after {
   left: 0;
 }
 
-/*nu-in logo*/
+/*nu-in logo
 nav>ul:nth-of-type(2)>li:nth-of-type(2) img {
   width: 9em;
   margin: 0em 1em 0em 1em;
-}
+}*/
 
 /*navigatie + hamburgermenu*/
 nav {
@@ -200,16 +200,17 @@ body>section ul {
   display: flex;
   padding: 0;
   flex-direction: row;
-  overflow: hidden;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
   width: 100%;
 }
 
 body>section ul:nth-of-type(1) {
   display: grid;
   width: 100%;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-column-gap: 20px;
-  padding: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-column-gap: 1em;
+  padding: 0.5em;
 }
 
 body>section:nth-of-type(1) ul li {
@@ -231,6 +232,7 @@ body>section:nth-of-type(1) ul li p {
 
 body>section:nth-of-type(1) ul li img {
   border-radius: 50%;
+  width: 30vw;
 }
 
 /*body>section ul li {
@@ -363,7 +365,7 @@ main.homepage>section:nth-of-type(4) button {
   background-color: black;
   border-radius: 3em;
   padding: .7em;
-  margin: 1em;
+  margin-left: 1em;
   color: white;
   text-decoration: none;
   font-family: 'Nunito sans', sans-serif;
@@ -371,6 +373,8 @@ main.homepage>section:nth-of-type(4) button {
 
 form {
   width: 30%;
+  margin: auto;
+  display: flex;
 }
 
 input {
@@ -667,6 +671,20 @@ footer section ul li a {
   }
 }
 
+form {
+  width: 80%;
+  display: flex;
+}
+
+nav>ul:nth-of-type(2)>li:nth-of-type(2) img {
+  width: 4em;
+  margin: 0em 0em 0em 0em;
+}
+
+nav>ul:nth-of-type(3) {
+  width: 8em;
+}
+
 /*footer nu-in logo*/
 footer section:nth-of-type(2) img {
   width: 40%;
@@ -683,9 +701,9 @@ footer section:nth-of-type(2) p {
   width: 70%;
 }
 
-/*footer tekst*/
+/*footer partner images*/
 footer section:nth-of-type(6) img {
-  width: 30%;
+  width: 20%;
 }
 
 /*groter dan mobiel*/
@@ -694,11 +712,15 @@ footer section:nth-of-type(6) img {
     background-color: none;
   }
 
+
+
   main>section:first-of-type {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 1em;
   }
+
+
 }
 
 /* logo hamburgermnu
@@ -712,6 +734,62 @@ header>nav ul:nth-of-type(2) li:first-of-type a img {
   /*homepage scroll slider kleiner*/
   .home main>section:nth-of-type(3) article img {
     width: 25vw;
+  }
+
+  /*foto's in cirkels*/
+  body>section ul {
+    position: relative;
+    display: flex;
+    padding: 0;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    display: none;
+    width: 100%;
+  }
+
+  body>section ul:nth-of-type(1) {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: 5em;
+  }
+
+  body>section:nth-of-type(1) ul li {
+    display: block;
+    margin: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  body>section:nth-of-type(1) ul li p {
+    text-align: center;
+  }
+
+  body>section:nth-of-type(1) ul li img {
+    border-radius: 50%;
+  }
+
+  body>section ul li {
+    display: block;
+    width: 100%;
+  }
+
+  body>section ul li img {
+    border-radius: 50%;
+    width: 40%;
+  }
+
+/*logo*/
+  nav>ul:nth-of-type(2)>li:nth-of-type(2) img {
+    width: 9em;
+    margin: 0em 0em 0em 0em;
+  }
+
+/*form*/
+  form {
+    width: 30%;
+    margin: auto;
+    display: flex;
   }
 
   /*header + navigatie*/
@@ -746,47 +824,7 @@ header>nav ul:nth-of-type(2) li:first-of-type a img {
     display: none;
   }
 
-  /*foto's in cirkels*/
-  body>section ul {
-    position: relative;
-    display: flex;
-    padding: 0;
-    flex-direction: row;
-    overflow: hidden;
-    width: 100%;
-  }
 
-  body>section ul:nth-of-type(1) {
-    display: grid;
-    justify-items: center;
-    width: 100%;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-column-gap: 1em;
-  }
-
-  body>section:nth-of-type(1) ul li {
-    display: block;
-    margin: 0;
-    margin: 0;
-    width: 70%;
-  }
-
-  body>section:nth-of-type(1) ul li p {
-    text-align: center;
-  }
-
-  body>section:nth-of-type(1) ul li img {
-    border-radius: 50%;
-  }
-
-  body>section ul li {
-    display: block;
-    width: 100%;
-  }
-
-  body>section ul li img {
-    border-radius: 50%;
-  }
 
   /*footer*/
   /*footer {
