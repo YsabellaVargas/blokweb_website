@@ -14,7 +14,7 @@ function toonHamburger() {
 hamburger.addEventListener('click', toonHamburger);
 hamburgerClose.addEventListener('click', toonHamburger)
 
-//wilde dit uitproberen
+//wilde dit uitproberen dit is de quickview button
 var quickViewButton = document.querySelectorAll('#quickViewButton');
 var productArticle = document.querySelectorAll('#productArticle');
 
@@ -52,3 +52,38 @@ function moveArticle() {
 window.setInterval(moveArticle, 8000);
 
 moveArticle()
+
+
+
+
+var footerFirst = document.querySelector('footer section:nth-of-type(3) button')
+
+console.log(footerFirst)
+
+function toonFooter() {
+    document.body.classList.toggle('toonFooter');
+  }
+
+  footerFirst.addEventListener('click', toonFooter)
+
+
+var footerSecond = document.querySelector('footer section:nth-of-type(4) button')
+
+console.log(footerSecond)
+
+function toonFooter2() {
+    document.body.classList.toggle('toonFooter2');
+}
+
+  footerSecond.addEventListener('click', toonFooter2)
+
+
+var footerThird = document.querySelector('footer section:nth-of-type(5) button')
+
+console.log(footerThird)
+
+function toonFooter3() {
+    document.body.classList.toggle('toonFooter3');
+  }
+
+  footerThird.addEventListener('click', toonFooter3)
