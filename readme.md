@@ -28,6 +28,7 @@ Uiteindelijk heb ik alle errors uit mijn site gehaald, comments toegevoegd en ge
 - Javascript gebruiken
 
 **Screenshot(s):**
+
 Navigatie met een underline transition.
 ![screenshot navigatie](images/readme/week7-8.navigatie.png)
 
