@@ -1,0 +1,892 @@
+/* CSS Document */
+/* Generic styling */
+*, *::after, *::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+body {
+  font-size: 1.25em;
+  display: flex;
+  flex-direction: column;
+  font: 100% / 250% "Nunito sans";
+}
+
+/*Tekst*/
+/*onzichtbare header h1*/
+h1 {
+  position: absolute;
+  left: -10000em;
+}
+
+h2 {
+  font-family: 'Neuton', serif;
+  font-size: 2em;
+  font-weight: 200;
+  text-align: center;
+  padding: .3em;
+}
+
+h3 {
+  font-family: 'Neuton', serif;
+  font-size: 1.5em;
+  font-weight: 200;
+  text-align: center;
+}
+
+h4 {
+  font-family: 'Nunito sans', sans-serif;
+  font-size: 1em;
+  font-weight: 500;
+}
+
+h5 {
+  font-family: 'Nunito sans', sans-serif;
+  font-size: 0.87em;
+  font-weight: 400;
+}
+
+p {
+  font-family: 'Nunito sans', sans-serif;
+  font-size: 0.81em;
+  text-align: left;
+  font-weight: 300;
+}
+
+/*header*/
+body>header {
+  width: 100%;
+  position: sticky;
+  z-index: 1000;
+  top: 0;
+  background-color: #fff;
+}
+
+/*shipping tekst*/
+header>p {
+  text-align: center;
+  background-color: #f5f5f5;
+}
+
+/*hamburger icoon header*/
+nav ul li:first-of-type img {
+  margin: .3em;
+  width: 70%;
+}
+
+/*iconen header*/
+header>nav ul:last-of-type li img {
+  width: 1.5em;
+  justify-content: space-around;
+}
+
+header>nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1em;
+}
+
+header>nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  align-items: center;
+}
+
+header>nav ul li {
+  margin-right: 1em;
+}
+
+header>nav ul li:first-of-type {
+  display: flex;
+}
+
+/*header hover*/
+header>nav ul li a {
+  position: relative;
+}
+
+header>nav ul li a:after {
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 0%;
+  position: absolute;
+  background: #000000;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+header>nav ul li a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+/*nu-in logo*/
+nav>ul:nth-of-type(2)>li:nth-of-type(2) img {
+  width: 9em;
+  margin: 0em 1em 0em 1em;
+}
+
+/*navigatie + hamburgermenu*/
+nav {
+  padding: .4em;
+}
+
+nav a {
+  color: black;
+  list-style-type: none;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: normal;
+}
+
+nav>ul:nth-of-type(2)>li:first-of-type button {
+  width: 3em;
+  background-color: transparent;
+}
+
+nav a:active {
+  color: purple;
+}
+
+.toonHamburger nav ul:first-of-type {
+  left: 0;
+  opacity: 1;
+}
+
+nav ul:first-of-type li button {
+  background-color: #000000;
+  border-radius: 3em;
+  margin-top: 1em;
+  padding: 1em;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+nav ul:first-of-type {
+  opacity: 0;
+  box-shadow: 0px 0px 1px 5000px rgba(0, 0, 0, 0.8);
+  left: -100%;
+  position: fixed;
+  flex-direction: column;
+  height: 100vh;
+  background-color: white;
+  width: 70vw;
+  margin: 0;
+  top: 0;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 2em;
+  z-index: 100;
+  transition: all 0.3s ease-out;
+}
+
+/*New arrivals titel*/
+body>section:nth-of-type(1) h2 {
+  margin: 0;
+  width: 100%;
+}
+
+/*foto's in cirkels*/
+body>section ul {
+  position: relative;
+  display: flex;
+  padding: 0;
+  flex-direction: row;
+  overflow: hidden;
+  width: 100%;
+}
+
+body>section ul:nth-of-type(1) {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 20px;
+  padding: 20px;
+}
+
+body>section:nth-of-type(1) ul li {
+  display: block;
+  width: 100%;
+}
+
+body>section:nth-of-type(1) ul li a {
+  text-decoration: none;
+}
+
+body>section:nth-of-type(1) ul li p {
+  text-align: center;
+  color: #000000;
+  font-family: 'Nunito sans', sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+body>section:nth-of-type(1) ul li img {
+  border-radius: 50%;
+}
+
+/*body>section ul li {
+  display: block;
+  width: 100%;
+}*/
+/*body>section ul li img {
+  border-radius: 0%;
+}*/
+/* algemene images*/
+img {
+  display: block;
+  width: 100%;
+  flex-grow: 0;
+  justify-content: space-around;
+}
+
+/*product image hover*/
+img.overlay {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: auto;
+  justify-content: space-around;
+  display: block;
+  transition: .5s ease;
+  opacity: 0;
+}
+
+img.overlay:hover {
+  opacity: 1;
+}
+
+/*index pagina main met class homepage articles*/
+main.homepage>section:first-of-type {
+  display: block;
+}
+
+main.homepage>section:first-of-type article h2 {
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+main.homepage>section:first-of-type article p {
+  color: white;
+  text-transform: none;
+  text-align: center;
+  line-height: 2em;
+}
+
+main.homepage>section>article>div>button {
+  background-color: #000000;
+  border-radius: 3em;
+  padding: 1em;
+  margin: 1em auto 1em auto;
+  display: block;
+}
+
+main.homepage>section>article>div>button a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Nunito sans', sans-serif;
+}
+
+main.homepage>section:first-of-type>article {
+  width: 100%;
+  position: relative;
+}
+
+main.homepage>section:first-of-type>article>img {
+  height: 50vh;
+  object-fit: cover;
+  /*zodat het plaatje niet wordt uitgerekt en de ruimte vult*/
+}
+
+main.homepage>section:first-of-type>article>div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+}
+
+/*productpagina lay-out
+article>div {
+  display: flex;
+}
+
+article section>div {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+article>section {
+  padding: 0em 1em;
+  flex-direction: ;
+  align-content: flex-start;
+}
+
+article section>div img {
+  width: .8em;
+  margin-left: 4em;
+}*/
+/* hart icoon*/
+section>article>header img:nth-of-type(3) {
+  width: 1em;
+}
+
+section>article>header {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/*newsletter form*/
+main.homepage>section:nth-of-type(4) {
+  display: block;
+  margin: auto;
+  padding: 1.5em;
+}
+
+main.homepage>section:nth-of-type(4) p {
+  text-align: center;
+}
+
+main.homepage>section:nth-of-type(4) button {
+  background-color: black;
+  border-radius: 3em;
+  padding: .7em;
+  margin: 1em;
+  color: white;
+  text-decoration: none;
+  font-family: 'Nunito sans', sans-serif;
+}
+
+form {
+  width: 30%;
+}
+
+input {
+  background-color: white;
+  border-bottom: 1px solid #000;
+  padding: 1em;
+  width: 100%;
+}
+
+/*homepage most wanted scroll slider*/
+/*hart icoon slider*/
+main.homepage>section:nth-of-type(3)>article>header>img:nth-of-type(3) {
+  width: 1em;
+}
+
+/*productpagina lay-out*/
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  overflow: hidden;
+  align-content: center;
+  width: 100%;
+}
+
+article {
+  width: 48%;
+  position: relative;
+}
+
+/*quick view button producten*/
+main>section>article>header>button {
+  background-color: black;
+  border-radius: 3em;
+  width: 100%;
+  padding: 1em;
+  color: white;
+  align-items: center;
+  text-decoration: none;
+  font-family: 'Nunito sans', sans-serif;
+  text-transform: uppercase;
+  opacity: 0;
+  position: absolute;
+  bottom: 4em;
+  transition: .6s ease;
+}
+
+.show+button {
+  opacity: 1 !important;
+}
+
+/*section>section img {
+  width: 10%;
+}*/
+/*informatie product*/
+section:first-of-type article p {
+  text-transform: uppercase;
+  line-height: 1.4;
+}
+
+/*most wanted + woman jackets titel*/
+section:nth-of-type(2) {
+  padding-top: 2em;
+  display: block;
+  margin: auto;
+}
+
+section:nth-of-type(2) p{
+  text-align: center;
+}
+
+/*footer tekst
+section:nth-of-type(2) h2, section:nth-of-type(2) p {
+  width: 100%;
+  text-align: center ;
+}*/
+/*homepage most wanted scroll slider*/
+.home main>section:nth-of-type(3) {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 0em;
+  overflow-x: scroll;
+}
+
+.home main>section:nth-of-type(3) article {
+  width: 50%;
+  margin-bottom: 10px;
+  margin: 1em;
+}
+
+.home main>section:nth-of-type(3) article img {
+  width: 50vw;
+}
+
+/*automatische slider informatie*/
+.article-slider {
+  background-color: #f5f5f5;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 0em;
+  overflow-x: hidden;
+}
+
+.article-slider article {
+  min-width: 50%;
+  padding: 0 1em;
+  /*transform: translateX(-100%);*/
+  transition: 1s ease-in;
+}
+
+.article-slider img {
+  width: 4.0em;
+}
+
+/*section:nth-of-type(5) {
+  width: 100%;
+  display: flex;
+  padding: 0em 2em 2em 2em;
+  justify-content: space-around;
+}
+
+section:nth-of-type(5) img {
+  width: 3em;
+  margin: 2em 0em 0em 0em;
+}*/
+/*footer*/
+footer {
+  background-color: #000000;
+}
+
+/*footer iconen algemeen*/
+footer section img {
+  width: 25%;
+  margin: auto;
+  display: block;
+  padding: 1.5em 1em 1em 1em;
+}
+
+footer section:nth-of-type(1) {
+  background-color: #ffffff;
+  padding: 1em;
+  margin: 0;
+  border: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/*footer iconen social media*/
+footer section:nth-of-type(1) img {
+  max-width: 4em;
+  padding: 1em;
+}
+
+/*social media iconen positioneren*/
+footer section:nth-of-type(1) div:nth-of-type(1) {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*betalings iconen*/
+footer section:nth-of-type(1) div:nth-of-type(2) {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer section:nth-of-type(1) div:nth-of-type(2) img {
+  max-width: 5em;
+}
+
+/*footer nu-in logo*/
+footer section:nth-of-type(2) img {
+  width: 40%;
+  margin: auto;
+  display: block;
+  padding: 1.5em 1em 1em 1em;
+}
+
+footer section:nth-of-type(6) img {
+  width: 10%;
+  justify-content: space-between;
+  display: flex;
+  padding: 1em;
+  margin: 3em .5em 2em .5em;
+}
+
+footer section p {
+  font-family: 'Nunito sans', sans-serif;
+  font-size: 0.81em;
+  text-align: center;
+  color: #ffffff;
+  font-weight: 300;
+  line-height: 2.5;
+  width: 45%;
+  padding: 0em 0em 1em 0em;
+}
+
+footer section h3 {
+  background-color: black;
+  color: #ffffff;
+  margin: 0;
+  font-family: 'Nunito sans', sans-serif;
+  font-size: 0.87em;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+  padding: 1.5em 0em 1.5em 0em;
+}
+
+/*footer section h2 {
+  color: #ffffff;
+  font-family: 'Nunito sans', sans-serif;
+  font-size: 0.87em;
+  font-weight: 300;
+  text-align: left;
+  margin-left: 2em;
+  text-transform: uppercase;
+  width: 80%;
+  padding: 1em 0em 1em 0em;
+}*/
+/*footer buttons*/
+footer section button {
+  margin: 0;
+  border-bottom: 0.03em solid white;
+  border-right: 0em;
+  border-left: 0em;
+  width: 100%;
+  font-family: 'Neuton', serif;
+  font-size: 1.2em;
+  font-weight: 200;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+footer section ul {
+  max-height: 0;
+  opacity: 0;
+  transition: 1s;
+}
+
+footer section ul li {
+  background-color: #000000;
+  text-align: left;
+  padding: 0.5em;
+}
+
+footer section ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 1em;
+  font-family: 'Nunito sans', sans-serif;
+  font-size: 1em;
+  text-align: left;
+  font-weight: 300;
+}
+
+/*aanroepen van javascript*/
+.toonFooter footer section:nth-of-type(3) ul {
+  max-height: 100em;
+  opacity: 1;
+}
+
+.toonFooter2 footer section:nth-of-type(4) ul {
+  max-height: 100em;
+  opacity: 1;
+}
+
+.toonFooter3 footer section:nth-of-type(5) ul {
+  max-height: 100em;
+  opacity: 1;
+}
+
+/* breakpoints */
+/*mobiel*/
+@media all and (min-width: 45em) {
+  body {
+    background-color: none;
+  }
+
+  /*layout productpagina mobiel*/
+  main>section:first-of-type {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+  }
+
+  main>section:first-of-type article {
+    width: 100%;
+    background-color: none;
+  }
+}
+
+/*footer nu-in logo*/
+footer section:nth-of-type(2) img {
+  width: 40%;
+  margin: auto;
+  display: block;
+  padding: 1.5em 1em 1em 1em;
+}
+
+/*footer tekst*/
+footer section:nth-of-type(2) p {
+  text-align: center;
+  margin: auto;
+  display: block;
+  width: 70%;
+}
+
+/*footer tekst*/
+footer section:nth-of-type(6) img {
+  width: 30%;
+}
+
+/*groter dan mobiel*/
+@media all and (min-width: 60em) {
+  body {
+    background-color: none;
+  }
+
+  main>section:first-of-type {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1em;
+  }
+}
+
+/* logo hamburgermnu
+header>nav ul:nth-of-type(2) li:first-of-type a img {
+  margin-right: 10em;
+  width: 10%;
+}*/
+/*web*/
+@media all and (min-width: 900px) {
+
+  /*homepage scroll slider kleiner*/
+  .home main>section:nth-of-type(3) article img {
+    width: 25vw;
+  }
+
+  /*header + navigatie*/
+  header nav {
+    flex-wrap: wrap;
+  }
+
+  header nav ul:first-of-type {
+    justify-content: center;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: static;
+    opacity: 1;
+    height: auto;
+    box-shadow: none;
+  }
+
+  header nav ul:nth-of-type(1) {
+    order: 3;
+  }
+
+  /*hamburgermenu niet zichtbaar*/
+  header nav ul:nth-of-type(2) li:nth-of-type(1) {
+    display: none;
+  }
+
+  /*close button hamburgermenu niet zichtbaar*/
+  header nav ul:first-of-type li:first-of-type,
+  header nav ul:first-of-type li:last-of-type {
+    display: none;
+  }
+
+  /*foto's in cirkels*/
+  body>section ul {
+    position: relative;
+    display: flex;
+    padding: 0;
+    flex-direction: row;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  body>section ul:nth-of-type(1) {
+    display: grid;
+    justify-items: center;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 1em;
+  }
+
+  body>section:nth-of-type(1) ul li {
+    display: block;
+    margin: 0;
+    margin: 0;
+    width: 70%;
+  }
+
+  body>section:nth-of-type(1) ul li p {
+    text-align: center;
+  }
+
+  body>section:nth-of-type(1) ul li img {
+    border-radius: 50%;
+  }
+
+  body>section ul li {
+    display: block;
+    width: 100%;
+  }
+
+  body>section ul li img {
+    border-radius: 50%;
+  }
+
+  /*footer*/
+  /*footer {
+  background-color: #000000;
+}
+
+footer section:nth-of-type(1) img {
+  width: auto;
+  margin: auto;
+  display: block;
+  padding: 0;
+}
+
+footer section:nth-of-type(1) img {
+  width: auto;
+  padding: 0;
+}*/
+  /*footer tekst
+footer section:nth-of-type(2) p {
+  text-align: center;
+  margin: auto;
+  display: block;
+  width: 10%;
+}*/
+  /*footer partner images*/
+  footer section:nth-of-type(6) img {
+    width: 15%;
+  }
+
+  /*footer social media + betaling*/
+  footer section:nth-of-type(1) {
+    background-color: #ffffff;
+    margin: 0;
+    border: none;
+    width: auto;
+    padding: 2.5em;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  footer section:nth-of-type(1) div {
+    display: flex;
+  }
+
+  footer section:nth-of-type(1) div:nth-of-type(2) {
+    border-left: 1px solid #000;
+  }
+
+  /*betalings iconen*/
+  footer section:nth-of-type(1) div:nth-of-type(2) img {
+    max-width: 50px;
+  }
+
+  /*social media icons*/
+  footer section:nth-of-type(1) img {
+    width: 100%;
+    max-width: 25px;
+    padding: 0;
+  }
+
+  /*voor groter beeld*/
+  footer section:nth-of-type(2) {
+    padding: 50px 35px;
+    color: #fff;
+  }
+
+  /*footer tekst*/
+  footer section:nth-of-type(2) p {
+    margin: 0;
+    padding-top: 2em;
+    font-family: 'Nunito sans', sans-serif;
+    font-size: 0.81em;
+    font-weight: 300;
+    line-height: 2.5;
+    text-align: center;
+    width: 100%;
+  }
+
+  /*footer section:nth-of-type(2) div:nth-child(2){
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}*/
+  /*footer logo*/
+  footer section:nth-of-type(2) img {
+    width: 20%;
+    margin: auto;
+    display: block;
+    padding: 0;
+  }
+
+  footer section h2 {
+    color: #ffffff;
+    font-family: 'Nunito sans', sans-serif;
+    font-size: 0.87em;
+    font-weight: 300;
+    text-align: left;
+    margin-left: 2em;
+    text-transform: uppercase;
+    border-bottom: 1px solid #ffffff;
+    width: 80%;
+    padding: 1em 0em 1em 0em;
+  }
+}
