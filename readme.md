@@ -29,10 +29,10 @@ Uiteindelijk heb ik alle errors uit mijn site gehaald, comments toegevoegd en ge
 
 **Screenshot(s):**
 Navigatie met een underline transition.
-![screenshot navigatie](../readme/week7-8.navigatie.png)
+![screenshot navigatie](images/readme/week7-8.navigatie.png)
 
 Hamburgermenu
-![screenshot hamburgermenu](../readme/week7-8.hamburgermenu.png)
+![screenshot hamburgermenu](images/readme/week7-8.hamburgermenu.png)
 
 Homepagina mobiel, de "new arrivals" foto's kunnen horizontaal gescrolld worden op mobiel en zijn klikbaar.
 ![screenshot new arrivals scroll](images/readme/week7-8.informatie.mobiel.png)
