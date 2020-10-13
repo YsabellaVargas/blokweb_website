@@ -14,21 +14,7 @@ function toonHamburger() {
 hamburger.addEventListener('click', toonHamburger);
 hamburgerClose.addEventListener('click', toonHamburger)
 
-//wilde dit uitproberen: dit is de quickview button
-var quickViewButton = document.querySelectorAll('#quickViewButton');
-var productArticle = document.querySelectorAll('#productArticle');
-
-productArticle.forEach(element => {
-  element.addEventListener('mouseover', (event) =>
-    event.target.classList.add('show')
-  )
-
-  element.addEventListener('mouseout', (event) =>
-    event.target.classList.remove('show'))
-})
-
 //hulp van Sam voor me automatische slider
-
 var slider = document.querySelectorAll(".article-slider article");
 console.log(slider)
 
