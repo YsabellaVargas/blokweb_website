@@ -201,7 +201,7 @@ body>section ul {
   padding: 0;
   flex-direction: row;
   flex-wrap: nowrap;
-  overflow-x: scroll;
+  overflow: auto;
   width: 100%;
 }
 
@@ -744,6 +744,7 @@ header>nav ul:nth-of-type(2) li:first-of-type a img {
     flex-direction: row;
     flex-wrap: nowrap;
     display: none;
+    overflow: auto;
     width: 100%;
   }
 
