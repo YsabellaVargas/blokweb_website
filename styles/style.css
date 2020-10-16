@@ -607,6 +607,7 @@ footer section ul li a {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 1em;
+    padding: 1em;
   }
 
   main>section:first-of-type article {
@@ -625,6 +626,7 @@ footer section ul li a {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 1em;
+    padding: 1em;
   }
 }
 
