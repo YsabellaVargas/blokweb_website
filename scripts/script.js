@@ -14,28 +14,28 @@ function toonHamburger() {
 hamburger.addEventListener('click', toonHamburger);
 hamburgerClose.addEventListener('click', toonHamburger)
 
-//hulp van Sam voor me automatische slider
-var slider = document.querySelectorAll(".article-slider article");
+//Automatische slider
+var slider = document.querySelectorAll(".article-slider article"); //hiermee pak ik alle articles
 console.log(slider)
 
-var counter = 1;
+var counter = 1; //maak een teller aan
 
 function moveArticle() {
 
   console.log(counter)
-  slider.forEach(element => {
-    element.style.transform = "translateX(-" + counter * 2 + "00%)";
+  slider.forEach(element => { //voor elk article in de slider iets doen
+    element.style.transform = "translateX(-" + counter * 2 + "00%)"; //transform het element
   });
-  counter++
+  counter++ //teller omhoog
 
   if (counter == slider.length / 2) {
     counter = 0;
-  }
+  } //als de teller hetzelfde is als de helft van de slider elementen wordt er terug gereset naar 0
 
   console.log("fire")
 }
 
-window.setInterval(moveArticle, 8000);
+window.setInterval(moveArticle, 8000); //roept de functie elke 8 seconden aan
 
 moveArticle()
 
