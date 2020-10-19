@@ -4,7 +4,7 @@
 ## Bronnenlijst
 1. https://nu-in.com
 2. https://csspeeper.com (om de style mee in te zien)
-3. Voor het hamburgermenu heb ik hulp gekregen van mijn medestudent Iris Jansendie de H&M website maakt.
+3. Voor het hamburgermenu heb ik hulp gekregen van mijn medestudent Iris Jansen die de H&M website maakt.
 4. Voor de uitklapbare footer heb ik hulp gekregen van Suze Entjes die deze ook gebruikt op haar website.
 
 ## Eindgesprek (week 7/8)
